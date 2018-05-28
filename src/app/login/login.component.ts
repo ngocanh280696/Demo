@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  
 })
 export class LoginComponent implements OnInit {
+ 
   username: string;
   password: string;
   succsess: string = 'login succsess';
@@ -16,8 +17,9 @@ export class LoginComponent implements OnInit {
   constructor() {
     this.userList = [{'username': 'admin', 'password': '123456' }];
    }
-  
+
   getlogin(){
+    
    if(this.username == this.userList['username'] && this.password == this.userList['password']){
      this.nocation = this.succsess;
    }else{
@@ -25,7 +27,7 @@ export class LoginComponent implements OnInit {
    }
  
   }
-  ngOnInit() {
-  }
-
+ ngOnInit(){
+   
+ }
 }

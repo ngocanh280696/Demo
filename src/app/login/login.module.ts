@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
-import { LoginComponent } from './login.component';
+import{LoginComponent} from '../login/login.component';
+import {BillService} from '../Service/bill.service';
 import { FormsModule } from '@angular/forms';
+
 
 
 
 @NgModule({
   imports: [
-    FormsModule
+    FormsModule,
+   
    
   ],
-  declarations: [LoginComponent]
+  //exports: [RouterModule],
+  declarations: [LoginComponent],
+
 })
 export class LoginModule { }
